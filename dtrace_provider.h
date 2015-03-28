@@ -5,7 +5,6 @@ extern "C" {
 #include <usdt.h>
 }
 
-#include <sys/dtrace.h>
 #include <sys/types.h>
 #include <sys/mman.h>
 
