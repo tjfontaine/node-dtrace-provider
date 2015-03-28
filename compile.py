@@ -1,8 +1,9 @@
 {
     'conditions': [
-        ['OS=="mac" or OS=="solaris"', {
+        ['OS=="mac" or OS=="solaris" or OS=="linux"', {
             'variables': {
-              'escaped_root': '<!(printf %q "<(module_root_dir)")',
+              #'escaped_root': '<!(printf %q "<(module_root_dir)")',
+              'escaped_root': '<(module_root_dir)',
             },
 
             # If we are on the Mac, or a Solaris derivative, attempt

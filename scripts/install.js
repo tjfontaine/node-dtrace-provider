@@ -2,7 +2,7 @@
 
 var movedFile = false;
 
-if (["linux", "win32"].indexOf(process.platform) !== -1)
+if (["win32"].indexOf(process.platform) !== -1)
   return;
 
 var fs = require('fs');
